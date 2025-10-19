@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* =============================
+   Main Container
+============================= */
+.notfound-container {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2d 0%, #0f0f1b 100%);
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+/* =============================
+   Background Gradient Orbs
+============================= */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  animation: pulse 6s infinite ease-in-out;
+}
+.orb-top {
+  top: -120px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, #3b82f6, #7c3aed);
+}
+.orb-bottom {
+  bottom: -150px;
+  left: -150px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, #2563eb, #00bcd4);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50% { transform: scale(1.1); opacity: 0.35; }
+}
+
+/* =============================
+   Title Styling
+============================= */
+.notfound-title {
+  font-size: 8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #1a72ff, #00f9ff, #7dd3fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 30px rgba(26, 114, 255, 0.4);
+  margin-bottom: 10px;
+  animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* =============================
+   Subheading + Text
+============================= */
+.notfound-heading {
+  font-size: 2rem;
+  color: #eaeaea;
+  font-weight: 600;
+}
+
+.notfound-description {
+  color: #bcbcbc;
+  max-width: 600px;
+  margin: 15px auto 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =============================
+   Button
+============================= */
+.notfound-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #1a72ff, #00b4ff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(26, 114, 255, 0.4);
+  transition: all 0.3s ease;
+}
+.notfound-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #154e98, #0095cc);
+  box-shadow: 0 0 25px rgba(26, 114, 255, 0.6);
+}
+
+/* =============================
+   Image
+============================= */
+.notfound-image {
+  margin-top: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+.notfound-image img {
+  width: 300px;
+  opacity: 0.9;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* =============================
+   Responsive
+============================= */
+@media (max-width: 768px) {
+  .notfound-title {
+    font-size: 5rem;
+  }
+  .notfound-heading {
+    font-size: 1.6rem;
+  }
+  .notfound-description {
+    font-size: 1rem;
+  }
+  .notfound-image img {
+    width: 220px;
+  }
+}

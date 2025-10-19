@@ -1,0 +1,141 @@
+/* Home.css */
+
+/* Main Container - Deep dark gradient */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #1e1e2d 0%, #0f0f1b 100%);
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  color: #f5f5f5;
+}
+
+/* Title Styling */
+.home-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Form Container with classic styling */
+.form-container {
+  background: rgba(28, 28, 43, 0.8); /* Darker but slightly transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Input Field and Styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #4a4a6a;
+  border-radius: 8px;
+  background-color: #33354d;
+  color: #fff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #1a72ff;
+  box-shadow: 0 0 10px rgba(26, 114, 255, 0.5);
+  outline: none;
+}
+
+/* Button Styling */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1a72ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #154e98;
+}
+
+.submit-button:disabled {
+  background-color: #555d6c;
+  cursor: not-allowed;
+}
+
+/* Response Container Styling */
+.response-container {
+  margin-top: 30px;
+  background: rgba(25, 25, 38, 0.9); /* Darker shade for feedback container */
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.response-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+}
+
+.response-container p {
+  font-size: 18px;
+  color: #b1b1b1;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 32px;
+  }
+
+  .input-field {
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+
+  .response-title {
+    font-size: 20px;
+  }
+}
+.home-container {
+  background: linear-gradient(135deg, #1e1e2d 0%, #0f0f1b 100%);
+  color: #f5f5f5;
+}
+.home-title {
+  color: #ffffff !important;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  z-index: 10;
+  position: relative;
+}
